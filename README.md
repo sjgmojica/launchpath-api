@@ -1,33 +1,73 @@
 # 🚀 LaunchPath API
 
-> Backend service for **LaunchPath**, an AI-powered career development platform that helps users discover career paths, assess their skills, receive personalized learning roadmaps, and prepare for their next job opportunity.
+A scalable **NestJS REST API** for **LaunchPath**, a platform designed to help individuals plan, track, and achieve their education, migration, career, and financial goals through a centralized and structured workflow.
+
+LaunchPath provides tools for goal planning, migration tracking, financial planning, document management, university applications, visa workflows, certification tracking, career development, and AI-powered guidance.
+
+> **Project Status:** 🚧 In Development
 
 ---
 
-## 📌 Overview
+## 📖 Overview
 
-LaunchPath API provides the backend services for the LaunchPath platform. It exposes RESTful APIs for authentication, user management, career exploration, AI-powered recommendations, learning roadmaps, job opportunities, and assessments.
+LaunchPath API is the backend service that powers the LaunchPath platform. It exposes RESTful APIs for managing users, goals, education planning, migration workflows, financial planning, career development, document management, and AI-powered recommendations.
 
-This project is built with scalability, maintainability, and testability in mind using modern backend development practices.
+The project is built with scalability, maintainability, security, and automated testing in mind using modern backend development practices.
 
 ---
 
-## 🛠 Tech Stack
+## ✨ Planned Features
 
-| Category       | Technology                         |
-| -------------- | ---------------------------------- |
-| Framework      | NestJS                             |
-| Language       | TypeScript                         |
-| Database       | PostgreSQL                         |
-| ORM            | Prisma                             |
-| Authentication | JWT                                |
-| Validation     | class-validator, class-transformer |
-| Testing        | Jest, Supertest                    |
-| Documentation  | Swagger/OpenAPI                    |
-| Linting        | ESLint                             |
-| Formatting     | Prettier                           |
-| Git Hooks      | Husky, lint-staged                 |
-| Environment    | @nestjs/config                     |
+### Core Platform
+
+* 👤 User Management
+* 🎯 Goal Planning
+* 🎓 Education Planning
+* 🌏 Migration Planning
+* 💰 Financial Planning
+* 📁 Document Management
+
+### Career Development
+
+* 💼 Career Planning
+* 📜 Certification Tracking
+* 🗺️ Learning Roadmaps
+* 📊 Skill Assessments
+* 💼 Job Tracking
+
+### Migration & Education
+
+* 🏫 University Applications
+* 🛂 Visa Workflow Tracking
+* 📄 Requirements Checklist
+
+### AI Features
+
+* 🤖 AI Assistant
+* 🎯 Personalized Recommendations
+* 📄 Resume Analysis
+* 🗺️ AI-Generated Roadmaps
+
+---
+
+## 🛠️ Tech Stack
+
+| Category           | Technology                          |
+| ------------------ | ----------------------------------- |
+| Framework          | NestJS                              |
+| Language           | TypeScript                          |
+| Database           | PostgreSQL                          |
+| ORM                | Prisma                              |
+| Authentication     | JWT                                 |
+| Validation         | class-validator + class-transformer |
+| API Documentation  | Swagger (OpenAPI)                   |
+| Unit Testing       | Jest                                |
+| End-to-End Testing | Jest + Supertest                    |
+| Linting            | ESLint                              |
+| Formatting         | Prettier                            |
+| Git Hooks          | Husky + lint-staged                 |
+| Package Manager    | npm                                 |
+| Runtime            | Node.js 22 LTS                      |
 
 ---
 
@@ -38,9 +78,14 @@ src/
 ├── modules/
 │   ├── auth/
 │   ├── users/
+│   ├── goals/
+│   ├── education/
+│   ├── migration/
+│   ├── finance/
+│   ├── documents/
 │   ├── careers/
+│   ├── certifications/
 │   ├── roadmaps/
-│   ├── skills/
 │   ├── assessments/
 │   ├── jobs/
 │   └── ai/
@@ -67,82 +112,81 @@ src/
 
 ---
 
-## 🧪 Testing Strategy
+## 🚀 Getting Started
 
-LaunchPath follows a layered testing approach.
-
-### Unit Tests
-
-* Service layer
-* Controller layer
-* Utility functions
-* Guards
-* Pipes
-
-### End-to-End (E2E) Tests
-
-Critical API workflows will be tested using Supertest, including:
-
-* Authentication
-* User management
-* Career recommendations
-* Roadmaps
-* Assessments
-* Jobs
-
-Testing is integrated into the development workflow, with all tests expected to pass before merging changes.
+See **SETUP.md** for complete installation and project setup instructions.
 
 ---
 
-## 🏗 Development Roadmap
+## 🧪 Testing
 
-### Phase 1
+LaunchPath follows a comprehensive testing strategy.
 
-* Project bootstrap
-* Project architecture
-* Prisma setup
-* PostgreSQL connection
-* Environment configuration
+* ✅ Unit Tests (Jest)
+* ✅ End-to-End Tests (Jest + Supertest)
+
+Every feature should include automated tests before it is merged.
+
+---
+
+## 🗺️ Development Roadmap
+
+### Phase 1 — Foundation
+
+* NestJS project setup
+* PostgreSQL
+* Prisma ORM
 * Swagger
-* ESLint & Prettier
-* Husky
+* Global validation
 * Testing configuration
+* Project architecture
 
-### Phase 2
+### Phase 2 — Authentication
 
-* Authentication
-* User management
+* User registration
+* Login
+* JWT authentication
+* Role-based authorization
 
-### Phase 3
+### Phase 3 — Core Modules
+
+* Goals
+* Education
+* Migration
+* Finance
+* Documents
+
+### Phase 4 — Career Platform
 
 * Careers
-* Skills
 * Roadmaps
+* Certifications
 * Assessments
 * Jobs
 
-### Phase 4
+### Phase 5 — AI Features
 
-* AI-powered recommendations
-* Resume analysis
-* AI chat assistant
+* AI Assistant
+* Recommendations
+* Resume Analysis
+* AI Roadmap Generator
 
-### Phase 5
+### Phase 6 — Production Readiness
 
 * Docker
-* CI/CD with GitHub Actions
+* CI/CD
 * Monitoring
-* Production deployment
+* Deployment
 
 ---
 
-## 🎯 Project Goals
+## 📚 Documentation
 
-* Build a scalable backend using NestJS.
-* Apply clean architecture and modular design.
-* Maintain high code quality with automated testing.
-* Demonstrate production-ready software engineering practices.
-* Serve as the backend for the LaunchPath web application.
+Additional project documentation will be available in:
+
+* `SETUP.md` – Project setup guide
+* `DEVELOPMENT.md` – Development workflow and coding standards
+* `docs/` – Architecture, testing strategy, and technical documentation
 
 ---
 
